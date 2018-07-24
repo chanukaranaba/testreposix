@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proxy name="testProductPxy" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
-        <inSequence/>
+        <inSequence>
+            <log level="full"/>
+        </inSequence>
         <outSequence/>
         <faultSequence/>
     </target>
